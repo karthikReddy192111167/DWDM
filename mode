@@ -1,0 +1,12 @@
+# vector of marks
+marks <- c(97, 78, 57,78, 97, 66, 87, 64, 87, 78)
+
+# define mode() function
+mode = function() {
+  
+  # calculate mode of marks  
+  return(names(sort(-table(marks)))[1])
+}
+
+# call mode() function
+mode()
